@@ -87,7 +87,7 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#qualifications">Credentials</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -786,27 +786,31 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
+     <!-- Contact Section -->
 <section id="contact" class="section-target py-5">
     <div class="container">
-        <div class="section-headline">Contact</div>
-        <h2 class="section-title">Let's Connect</h2>
+        
+        <!-- Header Section (Centered) -->
+        <div class="text-center mb-5">
+            <div class="section-headline text-uppercase tracking-wider justify-content-center">Contact</div>
+            <h2 class="section-title fw-bold mt-1">Let's Connect</h2>
+        </div>
 
-        <div class="row g-4 mt-2">
-            <!-- Inquiry Form (Web3Forms Integration) -->
+        <div class="row g-4">
+            <!-- Left Side: Inquiry Form -->
             <div class="col-lg-7">
-                <div class="segment-box p-4 h-100 position-relative" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: 20px;">
-                    <h3 class="h4 fw-bold mb-4 text-primary"><i class="fa-solid fa-paper-plane me-2"></i> Send a Message</h3>
+                <!-- Removed inline styles to let styles.css handle .segment-box seamlessly -->
+                <div class="segment-box h-100">
+                    <h3 class="h4 fw-bold mb-4 d-flex align-items-center" style="color: var(--accent-primary);">
+                        <i class="fa-solid fa-paper-plane me-2"></i> Send a Message
+                    </h3>
                     
-                    <!-- Form Submission Status Alert (Hidden by default) -->
+                    <!-- Form Submission Status Alert -->
                     <div id="form-status" class="alert d-none mb-4" role="alert" style="border-radius: 10px; font-size: 0.95rem;"></div>
 
                     <form id="contact-form" onsubmit="handleContactFormSubmit(event)">
-                        <!-- Web3Forms Access Key: You need to replace 'YOUR_ACCESS_KEY_HERE' -->
                         <input type="hidden" name="access_key" value="770d0c8e-61ed-48c6-a195-1b207dcc0a2e">
-                        <!-- Custom Email Subject -->
                         <input type="hidden" name="subject" value="New Inquiry from Portfolio Website">
-                        <!-- From Name -->
                         <input type="hidden" name="from_name" value="S.M. Tasrif Zaman Portfolio">
 
                         <div class="row g-3">
@@ -841,7 +845,8 @@
                             <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
 
                             <div class="col-md-12 text-end mt-4">
-                                <button type="submit" id="submit-btn" class="btn btn-primary px-4 py-2" style="border-radius: 8px; transition: all 0.3s ease;">
+                                <!-- Replaced inline styled button with your custom .btn-primary-tech class -->
+                                <button type="submit" id="submit-btn" class="btn-primary-tech">
                                     <span id="btn-text"><i class="fa-solid fa-paper-plane me-2"></i> Dispatch Message</span>
                                     <span id="btn-spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
                                 </button>
@@ -851,55 +856,58 @@
                 </div>
             </div>
 
-            <!-- Intent Cards -->
+            <!-- Right Side: Intent Cards -->
             <div class="col-lg-5">
                 <div class="d-flex flex-column h-100 justify-content-between gap-3">
+                    
                     <!-- Email Card -->
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tasrifzaman12@gmail.com" target="_blank" class="intent-card p-3 text-decoration-none d-flex align-items-center gap-3 transition-hover" style="border-radius: 15px; margin-bottom: 0;">
-                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary text-center d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; flex-shrink: 0;">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tasrifzaman12@gmail.com" target="_blank" class="intent-card text-decoration-none d-flex align-items-center gap-3" style="margin-bottom: 0;">
+                        <div class="p-3 rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--accent-light); color: var(--accent-primary); width: 50px; height: 50px; flex-shrink: 0;">
                             <i class="fa-solid fa-envelope-open fa-lg"></i>
                         </div>
                         <div>
-                            <span class="small text-muted d-block text-uppercase fw-bold">Direct Email</span>
-                            <span class="text-main fw-bold small" style="color: var(--text-main);">tasrifzaman12@gmail.com</span>
+                            <span class="small d-block text-uppercase fw-bold" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.5px;">Direct Email</span>
+                            <span class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">tasrifzaman12@gmail.com</span>
                         </div>
                     </a>
 
                     <!-- Phone Card -->
-                    <a href="tel:+8801303178664" class="intent-card p-3 text-decoration-none d-flex align-items-center gap-3 transition-hover" style="border-radius: 15px; margin-bottom: 0;">
-                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary text-center d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; flex-shrink: 0;">
+                    <a href="tel:+8801303178664" class="intent-card text-decoration-none d-flex align-items-center gap-3" style="margin-bottom: 0;">
+                        <div class="p-3 rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--accent-light); color: var(--accent-primary); width: 50px; height: 50px; flex-shrink: 0;">
                             <i class="fa-solid fa-phone-volume fa-lg"></i>
                         </div>
                         <div>
-                            <span class="small text-muted d-block text-uppercase fw-bold">Phone & Call</span>
-                            <span class="text-main fw-bold small" style="color: var(--text-main);">+8801303178664</span>
+                            <span class="small d-block text-uppercase fw-bold" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.5px;">Phone & Call</span>
+                            <span class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">+8801303178664</span>
                         </div>
                     </a>
 
                     <!-- LinkedIn Card -->
-                    <a href="https://bd.linkedin.com/in/s-m-tasrif-zaman" target="_blank" class="intent-card p-3 text-decoration-none d-flex align-items-center gap-3 transition-hover" style="border-radius: 15px; margin-bottom: 0;">
-                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary text-center d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; flex-shrink: 0;">
+                    <a href="https://bd.linkedin.com/in/s-m-tasrif-zaman" target="_blank" class="intent-card text-decoration-none d-flex align-items-center gap-3" style="margin-bottom: 0;">
+                        <div class="p-3 rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--accent-light); color: var(--accent-primary); width: 50px; height: 50px; flex-shrink: 0;">
                             <i class="fa-brands fa-linkedin-in fa-lg"></i>
                         </div>
                         <div>
-                            <span class="small text-muted d-block text-uppercase fw-bold">LinkedIn Connect</span>
-                            <span class="text-main fw-bold small" style="color: var(--text-main);">linkedin.com/in/s-mtasrif-zaman/</span>
+                            <span class="small d-block text-uppercase fw-bold" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.5px;">LinkedIn Connect</span>
+                            <span class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">linkedin.com/in/s-m-tasrif-zaman/</span>
                         </div>
                     </a>
 
                     <!-- GitHub Card -->
-                    <a href="https://github.com/tasrifz" target="_blank" class="intent-card p-3 text-decoration-none d-flex align-items-center gap-3 transition-hover" style="border-radius: 15px; margin-bottom: 0;">
-                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary text-center d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; flex-shrink: 0;">
+                    <a href="https://github.com/tasrifz" target="_blank" class="intent-card text-decoration-none d-flex align-items-center gap-3" style="margin-bottom: 0;">
+                        <div class="p-3 rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--accent-light); color: var(--accent-primary); width: 50px; height: 50px; flex-shrink: 0;">
                             <i class="fa-brands fa-github fa-lg"></i>
                         </div>
                         <div>
-                            <span class="small text-muted d-block text-uppercase fw-bold">GitHub Profile</span>
-                            <span class="text-main fw-bold small" style="color: var(--text-main);">github.com/tasrifz</span>
+                            <span class="small d-block text-uppercase fw-bold" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.5px;">GitHub Profile</span>
+                            <span class="fw-bold" style="color: var(--text-main); font-size: 0.95rem;">github.com/tasrifz</span>
                         </div>
                     </a>
+                    
                 </div>
             </div>
         </div>
+
     </div>
 </section>
    

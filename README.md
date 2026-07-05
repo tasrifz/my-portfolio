@@ -10,7 +10,7 @@ Built with HTML5, CSS3, JavaScript, and Bootstrap 5.
 - Web3Forms integration for contact
 
 ## Live Demo
-Check out the live site here: [https://tasrifz.github.io/my-portfolio](https://tasrifz.github.io/my-portfolio)
+Check out the live site here: [https://tasrifz.github.io/](https://tasrifz.github.io/)
 
 ## Contact
 - GitHub: [tasrifz](https://github.com/tasrifz)
